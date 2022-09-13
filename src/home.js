@@ -2,7 +2,6 @@ import footer from './footer'
 
 let home = () => {
 	let content = document.getElementById('content')
-	// Header DOM
 	// Main DOM
 	let card = document.createElement('div')
 	card.classList = 'card'
@@ -12,8 +11,9 @@ let home = () => {
 	card.appendChild(search)
 	let searchInput = document.createElement('input')
 	searchInput.type = 'text'
-	searchInput.placeholder = 'City, State, Country'
+	searchInput.placeholder = 'Search'
 	searchInput.classList = 'search-bar'
+	searchInput.autofocus = true
 	search.appendChild(searchInput)
 	let searchButton = document.createElement('button')
 	searchButton.id = 'searchButton'
@@ -33,15 +33,18 @@ let home = () => {
 	temp.classList = 'temp'
 	temp.innerText = '51°F'
 	weather.appendChild(temp)
+	let weatherContainer = document.createElement('div')
+	weatherContainer.classList = 'flex'
+	weather.appendChild(weatherContainer)
 	let weatherImage = document.createElement('img')
 	weatherImage.classList = 'icon'
-	weatherImage.src = ''
-	weatherImage.alt = ''
-	weather.appendChild(weatherImage)
+	weatherImage.src = 'https://openweathermap.org/img/wn/04n.png'
+	weatherImage.alt = 'Cloud'
+	weatherContainer.appendChild(weatherImage)
 	let weatherDescription = document.createElement('div')
 	weatherDescription.classList = 'description'
 	weatherDescription.innerText = 'Cloudy'
-	weather.appendChild(weatherDescription)
+	weatherContainer.appendChild(weatherDescription)
 	let weatherHumidity = document.createElement('div')
 	weatherHumidity.classList = 'humidity'
 	weatherHumidity.innerText = 'Humidity: 60%'

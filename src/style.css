@@ -2,7 +2,7 @@
 	--dark: #374151;
 	--darker: #1f2937;
 	--darkest: #111827;
-	--grey: #6b7280;
+	--grey: #7c7c7c2b;
 	--light: #eee;
 	--danger: #ff5b57;
 	--primary: #513741;
@@ -38,6 +38,12 @@ body {
 
 .card h1.temp {
 	font-size: xx-large;
+	margin-top: 0.5em;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
 	margin-top: 0.5em;
 }
 
