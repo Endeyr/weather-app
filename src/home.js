@@ -11,7 +11,7 @@ let home = () => {
 	card.appendChild(search)
 	let searchInput = document.createElement('input')
 	searchInput.type = 'text'
-	searchInput.placeholder = 'Search'
+	searchInput.placeholder = 'Search a City'
 	searchInput.classList = 'search-bar'
 	searchInput.autofocus = true
 	search.appendChild(searchInput)
@@ -23,7 +23,7 @@ let home = () => {
 	searchIcon.classList = 'fa-solid fa-magnifying-glass'
 	searchButton.appendChild(searchIcon)
 	let weather = document.createElement('div')
-	weather.classList = 'weather'
+	weather.classList = 'weather loading'
 	card.appendChild(weather)
 	let city = document.createElement('h2')
 	city.classList = 'city'
